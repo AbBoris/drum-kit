@@ -19,6 +19,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 400px;
 }
 
 .keys__item {
@@ -57,4 +58,30 @@ body {
   color: #ffc600;
   display: block;
   margin-top: 1rem;
+}
+
+.record-panel {
+    margin-top: 2rem;
+}
+
+.record-panel__record-button {
+    width: 60px;
+    height: 60px;
+    background-color: orangered;
+    border: none;
+    transition: all .4s;
+    outline: none;
+    box-shadow: 0 0 0 5px #fff;
+}
+
+.record-panel__record-button:hover {
+    background-color: #ccc;
+}
+
+.record-panel__record-button--play {
+    border-radius: 50%;
+}
+
+.record-panel__record-button--stop {
+    border-radius: 18px;
 }
